@@ -4,9 +4,13 @@ package com.javarush.task.pro.task06.task0609;
 Кубический калькулятор в кубе
 */
 
+import java.util.Scanner;
+
 public class Solution {
     public static void main(String[] args) {
-
+        Scanner console = new Scanner(System.in);
+        long num = console.nextLong();
+        System.out.println(ninthDegree(num));
     }
 
     public static long cube(long a){
