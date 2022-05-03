@@ -16,9 +16,7 @@ public class Solution {
     public static int min(int[] ints) {
         int min = ints[0];
         for (int i = 1; i < ints.length; i++) {
-            if(min > ints[i]){
-                min = ints[i];
-            }
+            min = Math.min(min, ints[i]);
         }
         return min;
     }
