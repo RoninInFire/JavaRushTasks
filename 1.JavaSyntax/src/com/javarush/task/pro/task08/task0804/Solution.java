@@ -11,6 +11,6 @@ public class Solution {
     }
 
     public static int generateNumber() {
-        return (int) (Math.random() * 100);
+        return (int) (Math.random() * 100); // создаём раномайзер
     }
 }
