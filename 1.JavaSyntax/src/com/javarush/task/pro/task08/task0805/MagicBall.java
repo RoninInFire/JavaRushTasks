@@ -15,29 +15,15 @@ public class MagicBall {
     public static String getPrediction() {
         Random r = new Random();
         int x = r.nextInt(8);
-        if (x == 0){
-            return CERTAIN;
-        }
-        if (x == 1){
-            return DEFINITELY;
-        }
-        if (x == 2){
-            return MOST_LIKELY;
-        }
-        if (x == 3){
-            return OUTLOOK_GOOD;
-        }
-        if (x == 4){
-            return ASK_AGAIN_LATER;
-        }
-        if (x == 5){
-            return TRY_AGAIN;
-        }
-        if (x == 6){
-            return NO;
-        }
-        if (x == 7){
-            return VERY_DOUBTFUL;
+        switch (x) {
+            case 0: return CERTAIN;
+            case 1: return DEFINITELY;
+            case 2: return MOST_LIKELY;
+            case 3: return OUTLOOK_GOOD;
+            case 4: return ASK_AGAIN_LATER;
+            case 5: return TRY_AGAIN;
+            case 6: return NO;
+            case 7: return VERY_DOUBTFUL;
         }
         return null;
     }
