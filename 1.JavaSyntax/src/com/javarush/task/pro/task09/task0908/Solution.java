@@ -35,7 +35,6 @@ public class Solution {
             bH binary = new bH();
         for (int i = 0; i < binaryNumberBuilder.length(); i = i + 4) {
             String str = binaryNumber.substring(i, i + 4);
-            result = result + binary.get(str);
         }
         return result.toString();
     }
